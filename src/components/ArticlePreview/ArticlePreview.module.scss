@@ -1,0 +1,121 @@
+.card {
+  background-color: #fff;
+  box-shadow: 0 4px 12px #00000026;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  width: 938px;
+  height: 140px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 700px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.likes {
+  font-size: 14px;
+  color: #888;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #444;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #000;
+  margin-right: 4px;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+// .description {
+//   font-size: 14px;
+//   color: #444;
+//   line-height: 1.4;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.authorName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.date {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.previewDescription {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  line-height: 22px;
+  color: #00000080;
+  max-width: 100%;
+}
+
+.likeButton {
+  padding: 0;
+  height: auto;
+  background: none !important;
+  box-shadow: none !important;
+
+  &:hover {
+    background: none !important;
+  }
+}
+
+
+
+

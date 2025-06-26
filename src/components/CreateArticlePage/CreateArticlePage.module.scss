@@ -1,0 +1,151 @@
+.wrapper {
+  width: 938px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputError {
+  border-color: #f5222d;
+}
+
+.errorMessage {
+  color: #f5222d;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+.error {
+  color: #f5222d;
+}
+
+.tagRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.tagLabel {
+  flex: 0; // инпут займет оставшееся место
+}
+label {
+  display: flex;
+  flex-direction: basel;
+  font-size: 14px;
+  color: #000;
+}
+
+input,
+textarea {
+  margin-top: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background: #fff;
+
+  &:focus {
+    border-color: #1890ff;
+    outline: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+.tagInput {
+  width: 300px;
+}
+// .tags {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px;
+// }
+.addTagRow {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+.tag-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.addTag {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: 1px solid #1890ff;
+  color: #1890ff;
+  background-color: transparent;
+  cursor: pointer;
+  width: 118px;
+  height: 40px;
+
+  &:hover {
+    background-color: #e6f7ff;
+  }
+}
+
+.deleteTag {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  border-radius: 4px;
+  height: 40px;
+  width: 118px;
+  font-size: 14px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #f5222d;
+  color: #f5222d;
+
+  &:hover {
+    background-color: #fff1f0;
+  }
+}
+
+.addTag {
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-size: 14px;
+  border: 1px solid #1890ff;
+  color: #1890ff;
+  background-color: transparent;
+
+  &:hover {
+    background-color: #e6f7ff;
+  }
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #1890ff;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #40a9ff;
+  }
+}

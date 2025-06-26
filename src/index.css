@@ -1,13 +1,71 @@
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #ebeef3;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.pageButton {
+  width: 32px;
+  height: 32px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pageButton:hover:not(.active):not(:disabled) {
+  background-color: #ddd;
+}
+
+.pageButton.active {
+  background-color: #1890ff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.pageButton:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: default;
+}
+
+.bodyArticles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+  width: 100%;
+}
+
+/* .article-description {
+  word-wrap: break-word;
+  color: #00000080;
+  display: block;
+  font-size: 12px;
+  line-height: 22px;
+  max-width: 100%;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+} */
